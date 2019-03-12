@@ -1,0 +1,11 @@
+EMBEDDED_CONTENT_CONTAINS_SWIFT = YES
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/SAMKeychain" "${PODS_CONFIGURATION_BUILD_DIR}/flutter_beacon" "${PODS_CONFIGURATION_BUILD_DIR}/flutter_udid" "${PODS_CONFIGURATION_BUILD_DIR}/intro_slider" "${PODS_CONFIGURATION_BUILD_DIR}/shared_preferences" "${PODS_ROOT}/../.symlinks/flutter/ios"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_CFLAGS = $(inherited) -iquote "${PODS_CONFIGURATION_BUILD_DIR}/SAMKeychain/SAMKeychain.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/flutter_beacon/flutter_beacon.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/flutter_udid/flutter_udid.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/intro_slider/intro_slider.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/shared_preferences/shared_preferences.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "Flutter" -framework "SAMKeychain" -framework "flutter_beacon" -framework "flutter_udid" -framework "intro_slider" -framework "shared_preferences"
+OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods

@@ -1,0 +1,32 @@
+{
+  "name": "flutter_beacon",
+  "version": "0.1.1",
+  "summary": "Flutter plugin for scanning beacon (iBeacon platform) devices on Android and iOS.",
+  "description": "Flutter plugin for scanning beacon (iBeacon platform) devices on Android and iOS.",
+  "homepage": "https://github.com/alann-maulana/flutter_beacon",
+  "license": {
+    "file": "../LICENSE"
+  },
+  "authors": {
+    "Alann Maulana": "alann.maulana@outlook.com"
+  },
+  "source": {
+    "path": "."
+  },
+  "source_files": "Classes/**/*",
+  "public_header_files": "Classes/**/*.h",
+  "dependencies": {
+    "Flutter": [
+
+    ]
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "ios": {
+    "frameworks": [
+      "CoreLocation",
+      "CoreBluetooth"
+    ]
+  }
+}
